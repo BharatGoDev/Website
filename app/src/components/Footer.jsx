@@ -6,9 +6,13 @@ export default function Example() {
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white-900">
             <img className="h-8 w-auto" src="./logo.png" alt="BharatGoDev" />
 
-            <span className="ml-3 text-xl">BharatGoDev</span>
+            <div className="ml-3 text-xl">
+            <span style={{ color: "#FF9933" }}>Bhar</span>
+            <span style={{ color: "#FFFFFF" }}>atG</span>
+            <span style={{ color: "#138808" }}>oDev</span>
+            </div>
           </a>
-          <p className="mt-2 text-sm text-white">Our Official Website</p>
+          <p className="mt-2 ml-6 text-sm text-white">Our Official Website</p>
         </div>
         <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
