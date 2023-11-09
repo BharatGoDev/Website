@@ -19,18 +19,18 @@ export default function Example() {
             <h2 className="title-font font-medium text-white-900 tracking-widest text-sm mb-3">
               Categories
             </h2>
-            <nav className="list-none mb-10">
+            <nav className="list-none mb-5">
               <li>
-                <a className="text-white-600 hover:text-white-800">Home</a>
+                <a href="#about" className="text-white-600 hover:text-white-800">About</a>
               </li>
               <li>
-                <a className="text-white-600 hover:text-white-800">About</a>
+                <a href="#projects" className="text-white-600 hover:text-white-800">Projects</a>
               </li>
               <li>
-                <a className="text-white-600 hover:text-white-800">Projects</a>
+                <a href="#services" className="text-white-600 hover:text-white-800">Services</a>
               </li>
               <li>
-                <a className="text-white-600 hover:text-white-800">Contact</a>
+                <a href="#contact" className="text-white-600 hover:text-white-800">Contact</a>
               </li>
             </nav>
           </div>
