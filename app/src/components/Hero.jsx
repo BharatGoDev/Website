@@ -1,6 +1,6 @@
 export default function Example() {
   return (
-    <div className="bg-black lg:px-10 lg:pt-20 lg:pr-40 lg:pb-40 lg:pl-40">
+    <div className="bg-black lg:px-10 lg:pt-20 lg:pr-40 lg:pb-20 lg:pl-40">
     <div className="lg:flex lg:items-center">
       <img src="/hero.svg" alt="hero" className=" hidden lg:block lg:w-80 lg:h-80 lg:mt-0" />
       <div className=" lg:text-right  text-center pt-2 lg:pl-20 lg:ml-20 ">

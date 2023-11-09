@@ -19,10 +19,10 @@ export default function ContactForm(){
   
     return (
       <div className="container mx-auto max-w-md px-4">
-        <h1 className="text-4xl text-white font-bold tracking-tight sm:text-6xl pb-2 text-center">Contact Us</h1>
+        <h1 className="text-sm text-white font-bold tracking-tight sm:text-2xl pb-4 pt-4 text-center">Contact Us</h1>
   
         <form className="flex flex-col w-full">
-          <label className="mb-2 font-medium text-white sm:w-1/2 md:w-full">Name:</label>
+          <label className="mb-2 font-medium text-white sm:text-l sm:w-1/2 md:w-full">Name</label>
           <input
             type="text"
             value={name}
@@ -30,7 +30,7 @@ export default function ContactForm(){
             className="sm:w-1/2 rounded-md border border-gray-300 px-2 py-2 md:w-full"
           />
   
-          <label className="mt-4 mb-2 font-medium text-white sm:w-1/2 md:w-full">Email:</label>
+          <label className="mt-2 mb-2 font-medium text-white sm:text-l sm:w-1/2 md:w-full">Email</label>
           <input
             type="email"
             value={email}
@@ -38,7 +38,7 @@ export default function ContactForm(){
             className="md:w-full rounded-md border border-gray-300 px-2 py-2 sm:w-1/2"
           />
   
-          <label className="mt-4 mb-2 font-medium text-white">Message:</label>
+          <label className="mt-2 mb-2 font-medium sm:text-l text-white">Message</label>
           <textarea
             value={message}
             onChange={(event) => setMessage(event.target.value)}
@@ -48,7 +48,7 @@ export default function ContactForm(){
   
           <button
             type="submit"
-            className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
+            className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md sm:text-l"
           >
             Send
           </button>
