@@ -1,51 +1,27 @@
-import React, { useState } from 'react';
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { Carousel } from 'flowbite-react';
+
 export default function Services() {
-
-  const [imageIndex, setImageIndex] = useState(0);
-  length=3;
-  const handleNextClick = () => {
-    if (imageIndex < length - 1) {
-      setImageIndex(imageIndex + 1);
-    } else {
-      setImageIndex(0);
-    }
-  };
-
-  const handleBackClick = () => {
-    if (imageIndex > 0) {
-      setImageIndex(imageIndex - 1);
-    } else {
-      setImageIndex(length - 1);
-    }
-  };
-
-  return (
-        <div className="relative h-full w-full">
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-            <div className="w-full h-full object-cover visible" style={{ transform: `translateX(-${imageIndex * 100}%)`, transition: 'transform 0.5s ease-in-out' }}>
-              <img src="/Stoccoin.jpeg" alt="Web Development" />
+    return (
+        <div className="top-14 h-30 w-full sm:h-[40vh] sm:w-full xl:h-[40vh] bg-clip-content bg-transparent shadow-2xl pt-4">
+            <h2 className="text-2xl font-bold tracking-tight text-white">
+          {" "}
+          Our Services
+        </h2>
+          <Carousel slideInterval={1000} className="overflow-y-clip rounded py-5">
+          <div className="relative h-full w-full mix-blend-overlay object-contain py-2">
+            <img src="./app-services.svg" alt="..." className="absolute h-full w-full object-contain " />
+            <div className="absolute -z-10 bg-gradient-to-b from-stone-800 via-black to-black h-full w-full" />
             </div>
-            <div className="w-full h-full object-cover hidden" style={{ transform: `translateX(-${1 * 100}%)`, transition: 'transform 0.5s ease-in-out' }}>
-              <img src="/Ember.jpeg" alt="App Development" />
+            <div className="relative h-full w-full mix-blend-overlay py-2">
+            <img src="./website-services.svg" alt="..." className="absolute h-full w-full object-contain " />
+            <div className="absolute -z-10 bg-gradient-to-b from-stone-800 via-black to-black h-full w-full" />
             </div>
-            <div className="w-full h-full object-cover hidden" style={{ transform: `translateX(-${2 * 100}%)`, transition: 'transform 0.5s ease-in-out' }}>
-              <img src="/Sevak.jpeg" alt="Graphic Design" />
+            <div className="relative h-full w-full mix-blend-overlay py-2">
+            <img src="./design-services.svg" alt="..." className="absolute h-full w-full object-contain " />
+            <div className="absolute -z-10 bg-gradient-to-b from-stone-800 via-black to-black h-full w-full" />
             </div>
-          </div>
-          <button
-            className="absolute top-1/2 transform -translate-y-1/2 left-0 cursor-pointer bg-white hover:bg-gray-100 rounded-full p-2 md:hidden"
-            onClick={handleBackClick}
-          >
-            <BsChevronCompactLeft className="h-6 w-6" />
-          </button>
-          <button
-            className="absolute top-1/2 transform -translate-y-1/2 right-0 cursor-pointer bg-white hover:bg-gray-100 rounded-full p-2 md:hidden"
-            onClick={handleNextClick}
-          >
-            <BsChevronCompactRight className="h-6 w-6" />
-          </button>
-        </div>
-      );
-      
+          </Carousel>
+
+        </div> 
+    );
 }
