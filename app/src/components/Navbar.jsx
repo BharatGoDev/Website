@@ -1,13 +1,14 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Auth from "./Auth";
 
 const navigation = [
   { name: "About", href: "#about", current: false },
   { name: "Projects", href: "#projects", current: false },
   { name: "Services", href: "#services", current: false },
   { name: "Contact", href: "#contact", current: false },
-
+  { name: "Accounts", href: "/accounts", current: false },
 ];
 
 function classNames(...classes) {
@@ -97,7 +98,7 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                          href="/accounts"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
@@ -120,19 +121,7 @@ export default function Example() {
                           </a>
                         )}
                       </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Sign out
-                          </a>
-                        )}
-                      </Menu.Item>
+                      <Menu.Item>{() => <Auth />}</Menu.Item>
                     </Menu.Items>
                   </Transition>
                 </Menu>
