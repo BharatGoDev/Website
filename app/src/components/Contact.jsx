@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
-export default function ContactForm(){
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-  
-      const formData = {
-        name: name,
-        email: email,
-        message: message,
-      };
-  
-      console.log(formData);
-  
+import { useState } from 'react';
+
+export default function ContactForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const formData = {
+      name: name,
+      email: email,
+      message: message,
     };
   
     return (
@@ -31,7 +28,7 @@ export default function ContactForm(){
             className="sm:w-1/2 rounded-md border border-gray-300 px-2 py-2 md:w-full"
           />
   
-          <label className="mt-2 mb-2 font-medium text-white sm:text-l sm:w-1/2 md:w-full">Email</label>
+          <label className="mt-2 mb-1 font-medium text-left text-white sm:text-l sm:w-1/2 md:w-full">Email</label>
           <input
             type="email"
             value={email}
@@ -39,7 +36,7 @@ export default function ContactForm(){
             className="md:w-full rounded-md border border-gray-300 px-2 py-2 sm:w-1/2"
           />
   
-          <label className="mt-2 mb-2 font-medium sm:text-l text-white">Message</label>
+          <label className="mt-2 mb-1 font-medium sm:text-l text-left text-white">Message</label>
           <textarea
             value={message}
             onChange={(event) => setMessage(event.target.value)}
@@ -57,7 +54,5 @@ export default function ContactForm(){
       </div>
       </section>
     );
-  };
-  
-  
-  
+  }
+}
