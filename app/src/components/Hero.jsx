@@ -1,6 +1,7 @@
 import { Carousel } from "flowbite-react";
 export default function Example() {
   return (
+    <section id="about">
     <div className="bg-black lg:px-10 lg:pt-20 lg:pr-40 lg:pb-20 lg:pl-40">
     <div className="lg:flex lg:items-center">
       <Carousel leftControl="left" rightControl="right" slideInterval={1000} className="overflow-y-clip rounded-none ">
@@ -40,5 +41,6 @@ export default function Example() {
       </div>
     </div>
   </div>
+  </section>
   );
 }

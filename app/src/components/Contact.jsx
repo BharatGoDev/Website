@@ -18,6 +18,7 @@ export default function ContactForm(){
     };
   
     return (
+      <section id="contact">
       <div className="container mx-auto max-w-md px-4 pt-5">
         <h1 className="text-sm text-white font-bold tracking-tight sm:text-2xl pb-4 pt-4 text-center">Contact Us</h1>
   
@@ -54,6 +55,7 @@ export default function ContactForm(){
           </button>
         </form>
       </div>
+      </section>
     );
   };
   
