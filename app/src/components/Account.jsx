@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react'
 import { supabase } from '../supabaseClient'
 import Auth from './Auth'
 import PropTypes from 'prop-types';
+import Avatar  from './Avatar';
 
 function Account({ session }) {
   const [loading, setLoading] = useState(true)
   const [username, setUsername] = useState(null)
   const [website, setWebsite] = useState(null)
-//   const [avatar_url, setAvatarUrl] = useState(null)
+  const [avatar_url, setAvatarUrl] = useState(null)
 
   useEffect(() => {
     async function getProfile() {
@@ -25,7 +26,7 @@ function Account({ session }) {
       } else if (data) {
         setUsername(data.username)
         setWebsite(data.website)
-        // setAvatarUrl(data.avatar_url)
+        setAvatarUrl(data.avatar_url)
       }
 
       setLoading(false)
@@ -53,57 +54,64 @@ function Account({ session }) {
     if (error) {
       alert(error.message)
     } else {
-    //   setAvatarUrl(avatarUrl)
+      setAvatarUrl(avatarUrl)
     }
     setLoading(false)
   }
 
   return (
-    <div>
-    <Auth />
-    <form onSubmit={updateProfile} className="form-widget">
-      <div>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="text" value={session.user.email} disabled />
-      </div>
-      <div>
-        <label htmlFor="username">Name</label>
-        <input
-          id="username"
-          type="text"
-          required
-          value={username || ''}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="website">Website</label>
-        <input
-          id="website"
-          type="url"
-          value={website || ''}
-          onChange={(e) => setWebsite(e.target.value)}
-        />
-      </div>
-
-      <div>
-        <button className="button block primary" type="submit" disabled={loading}>
-          {loading ? 'Loading ...' : 'Update'}
-        </button>
-      </div>
-
-      <div>
-        <button className="button block" type="button" onClick={() => supabase.auth.signOut()}>
-          Sign Out
-        </button>
-      </div>
-    </form>
+    <div className="account-container">
+      <Auth />
+      <form onSubmit={updateProfile} className="form-widget">
+        <div className="profile-section">
+          <Avatar
+            url={avatar_url}
+            size={150}
+            onUpload={(event, url) => {
+              updateProfile(event, url);
+            }}
+          />
+          <label htmlFor="email">Email</label>
+          <input id="email" type="text" value={session.user.email} disabled />
+        </div>
+        <div className="profile-section">
+          <label htmlFor="username">Name</label>
+          <input
+            id="username"
+            type="text"
+            placeholder="Your Name"
+            required
+            value={username || ''}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div className="profile-section">
+          <label htmlFor="website">Website</label>
+          <input
+            id="website"
+            type="url"
+            placeholder="Your Website"
+            value={website || ''}
+            onChange={(e) => setWebsite(e.target.value)}
+          />
+        </div>
+        <div className="button-section">
+          <button className="button primary" type="submit" disabled={loading}>
+            {loading ? 'Updating...' : 'Update Profile'}
+          </button>
+        </div>
+        <div className="button-section">
+          <button className="button" type="button" onClick={() => supabase.auth.signOut()}>
+            Sign Out
+          </button>
+        </div>
+      </form>
     </div>
-  )
+  );
 }
 
 Account.propTypes = {
-    session: PropTypes.object.isRequired, // Assuming session is an object, adjust if needed
-  };
+  session: PropTypes.object.isRequired, // Assuming session is an object, adjust if needed
+};
 
 export default Account;
