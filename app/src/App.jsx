@@ -3,13 +3,13 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
-import ContactForm from "./components/Contact";
+import Contact from "./components/Contact";
 import Services from "./components/Services";
-import { useState, useEffect } from 'react';
-import { supabase } from './supabaseClient';
-import Account from './components/Account';
-import Login from './components/Login';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { supabase } from "./supabaseClient";
+import Account from "./components/Account";
+import Login from "./components/Login";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [session, setSession] = useState(null);
@@ -40,14 +40,13 @@ function App() {
                   <Hero />
                   <Services />
                   <Projects />
-                  <ContactForm />
+                  <Contact />
                   <Footer />
                 </>
               )
             }
           />
         </Routes>
-        
       </div>
     </Router>
   );
