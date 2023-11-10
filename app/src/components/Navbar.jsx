@@ -15,8 +15,6 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const isUserSignedIn = false;
-
   return (
     <Disclosure as="nav" className="bg-black sticky top-0 z-50">
       {({ open }) => (
@@ -24,6 +22,7 @@ export default function Example() {
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
@@ -94,8 +93,35 @@ export default function Example() {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    {/* Conditionally render Auth component based on sign-in status */}
-                    {!isUserSignedIn && <Menu.Item>{() => <Auth />}</Menu.Item>}
+                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                          href="/accounts"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Your Profile
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Settings
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>{() => <Auth />}</Menu.Item>
+                    </Menu.Items>
                   </Transition>
                 </Menu>
               </div>
