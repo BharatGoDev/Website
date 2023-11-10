@@ -15,7 +15,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const isUserSignedIn = false; // Replace with your actual authentication logic
+  const isUserSignedIn = false;
 
   return (
     <Disclosure as="nav" className="bg-black sticky top-0 z-50">
@@ -68,7 +68,7 @@ export default function Navbar() {
                   <Auth />
                 ) : (
                   <a href="/login" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                    Sign In / Sign Up
+                    Sign In
                   </a>
                 )}
               </div>
