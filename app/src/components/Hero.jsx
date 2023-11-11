@@ -11,7 +11,7 @@ export default function Example() {
             slideInterval={1000}
             className="overflow-y-clip rounded-none"
           >
-            <div className="relative h-full w-full mix-blend-overlay object-contain py-2 sm:h-0 sm:w-0">
+            <div className="relative mix-blend-overlay object-contain py-2 sm:h-0 sm:w-0 md:h-0 md:w-0 lg:h-full lg:w-full">
               <img
                 src="./code.svg"
                 alt="Code BharatGoDev"

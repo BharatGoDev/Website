@@ -16,13 +16,13 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="container mx-auto max-w-md px-4 pt-5">
-        <h2 className="text-2xl font-bold tracking-tight text-white">
+        <h2 className="text-2xl pb-2 font-bold tracking-tight text-white">
           {" "}
           Contact us
         </h2>
 
         <form
-          className="flex flex-col w-full items-center"
+          className="flex flex-col w-full items-left"
           onSubmit={handleSubmit}
           id="contactForm"
         >

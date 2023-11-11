@@ -8,7 +8,7 @@ export default function Example() {
           Our Work
         </h2>
 
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-1 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 xl:gap-x-8">
           <div className="group relative h-full flex flex-col items-center">
             {" "}
             {/* Center text using flexbox */}
