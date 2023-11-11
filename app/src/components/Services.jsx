@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react";
 export default function Services() {
   return (
     <section id="services">
-      <div className="top-14  h-35  w-full sm:h-[50vh] sm:w-full xl:h-[40vh] bg-clip-content bg-transparent shadow-2xl pt-4">
+      <div className="top-14 h-35 w-full sm:py-5 sm:h-[50vh] sm:w-full xl:h-[40vh] bg-clip-content bg-transparent shadow-2xl pt-4">
         <h2 className="text-2xl font-bold tracking-tight text-white">
           Our Services
         </h2>

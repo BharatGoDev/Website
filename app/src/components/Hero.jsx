@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react";
 export default function Example() {
   return (
     <section id="about">
-      <div className="bg-black lg:px-10 lg:pt-20 lg:pr-40 lg:pb-20 lg:pl-40">
+      <div className="bg-black sm:pb-5 lg:px-10 lg:pt-20 lg:pr-40 lg:pb-20 lg:pl-40">
         <div className="lg:flex lg:items-center">
           <Carousel
             leftControl=" "
@@ -11,7 +11,7 @@ export default function Example() {
             slideInterval={1000}
             className="overflow-y-clip rounded-none"
           >
-            <div className="relative h-full w-full mix-blend-overlay object-contain py-2">
+            <div className="relative h-full w-full mix-blend-overlay object-contain py-2 sm:h-0 sm:w-0">
               <img
                 src="./code.svg"
                 alt="Code BharatGoDev"
