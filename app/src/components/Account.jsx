@@ -76,16 +76,15 @@ export default function AccountPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800 text-white">
+    <>
       <h1 className="text-4xl font-bold tracking-tight mb-8">
         <span style={{ color: "#2196F3" }}>Greetings from </span>
-        <br />
         <span style={{ color: "#FF9933" }}>BharatGoDev</span>
       </h1>
 
       <form onSubmit={updateProfile} className="flex flex-col items-center">
         <label className="text-sm font-medium">
-          Email: <br />
+          Email:
           {session?.user?.email}
         </label>
 
@@ -132,6 +131,6 @@ export default function AccountPage() {
           Log Out
         </button>
       </div>
-    </div>
+    </>
   );
 }

@@ -7,9 +7,9 @@ export default function Example() {
             <img className="h-8 w-auto" src="./logo.png" alt="BharatGoDev" />
 
             <div className="ml-3 text-xl">
-            <span style={{ color: "#FF9933" }}>Bhar</span>
-            <span style={{ color: "#FFFFFF" }}>atG</span>
-            <span style={{ color: "#138808" }}>oDev</span>
+              <span style={{ color: "#FF9933" }}>Bhar</span>
+              <span style={{ color: "#FFFFFF" }}>atG</span>
+              <span style={{ color: "#138808" }}>oDev</span>
             </div>
           </a>
           <p className="mt-2 ml-6 text-sm text-white">Our Official Website</p>
@@ -21,16 +21,36 @@ export default function Example() {
             </h2>
             <nav className="list-none mb-5">
               <li>
-                <a href="#about" className="text-white-600 hover:text-white-800">About</a>
+                <a
+                  href="#about"
+                  className="text-white-600 hover:text-white-800"
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a href="#projects" className="text-white-600 hover:text-white-800">Projects</a>
+                <a
+                  href="#projects"
+                  className="text-white-600 hover:text-white-800"
+                >
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-white-600 hover:text-white-800">Services</a>
+                <a
+                  href="#services"
+                  className="text-white-600 hover:text-white-800"
+                >
+                  Services
+                </a>
               </li>
               <li>
-                <a href="#contact" className="text-white-600 hover:text-white-800">Contact</a>
+                <a
+                  href="#contact"
+                  className="text-white-600 hover:text-white-800"
+                >
+                  Contact
+                </a>
               </li>
             </nav>
           </div>
