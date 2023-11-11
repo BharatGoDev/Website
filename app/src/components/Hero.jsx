@@ -55,7 +55,7 @@ export default function Example() {
             </h1>
             <p className="text-center pt-2">
               <span style={{ color: "#FFFFFF" }}>
-                Web & Graphic Design Specialists
+                Website, App & Graphic Design Specialists
               </span>
             </p>
           </div>
