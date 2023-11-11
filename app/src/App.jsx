@@ -25,8 +25,8 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div>
+    <>
+      <Router>
         <Navbar />
         <Routes>
           <Route path="/login" element={<Login />} />
@@ -47,8 +47,8 @@ function App() {
             }
           />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </>
   );
 }
 

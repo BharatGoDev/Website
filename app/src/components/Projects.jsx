@@ -2,13 +2,13 @@ export default function Example() {
   return (
     <section id="projects">
     <div className="bg-black pb-3">
-      <div className="mx-auto max-w-2xl pb-0 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl pb-0 px-4 sm:px-6 sm:py-5 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl font-bold tracking-tight text-white">
           {" "}
           Our Work
         </h2>
 
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-2 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 xl:gap-x-8">
           <div className="group relative h-full flex flex-col items-center">
             {" "}
             {/* Center text using flexbox */}
