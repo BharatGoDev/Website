@@ -33,7 +33,7 @@ export default function Example() {
                   href="#projects"
                   className="text-white-600 hover:text-white-800"
                 >
-                  Projects
+                  Our Work
                 </a>
               </li>
               <li>

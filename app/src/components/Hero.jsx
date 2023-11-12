@@ -20,7 +20,7 @@ export default function Example() {
               <img
                 src={code}
                 alt="Code BharatGoDev"
-                className="absolute h-full w-full object-contain "
+                className=" hidden lg:block lg:w-80 lg:h-80 lg:mt-0 "
               />
             </div>
             <div className="relative h-full w-full py-2">
