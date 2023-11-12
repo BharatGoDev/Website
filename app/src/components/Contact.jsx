@@ -22,7 +22,7 @@ export default function Contact() {
         </h2>
 
         <form
-          className="flex flex-col w-full items-left"
+          className="flex flex-col w-full items-left sm:items-center lg:items-left md:items-left xl:items-left 2xl:items-left"
           onSubmit={handleSubmit}
           id="contactForm"
         >
