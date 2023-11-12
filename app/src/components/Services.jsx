@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react";
 export default function Services() {
   return (
     <section id="services">
-      <div className="w-full pt-6 h-[50vh] sm:pt-2 sm:h-[60vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] bg-clip-content bg-transparent shadow-2xl ">
+      <div className="w-full pt-10 h-[50vh] sm:h-[60vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] bg-clip-content bg-transparent shadow-2xl ">
         <h2 className="text-2xl font-bold tracking-tight text-white">
           Our Services
         </h2>
@@ -88,8 +88,6 @@ export default function Services() {
 
         <Carousel
           slideInterval={3000}
-          leftControl=" "
-          rightControl=" "
           className="carousel-hidden"
         >
           <div className="relative h-3/4 w-full pt-4">
