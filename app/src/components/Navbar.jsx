@@ -22,7 +22,7 @@ export default function Navbar() {
 
 
 
- <Disclosure as="nav" className="bg-black sticky top-0 z-50 nav-display">
+ <Disclosure as="nav" className="bg-black sticky top-0 left-0 z-50 nav-display">
 
 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
  <div className="relative flex h-16">
@@ -31,7 +31,7 @@ export default function Navbar() {
  <div className="flex flex-shrink-0 items-center">
  <a href="/">
  <img
-                    className="h-8 w-auto"
+                    className="h-8 w-auto pr-4"
                     src="./logo.png"
                     alt="BharatGoDev"/>
  </a>
@@ -76,13 +76,13 @@ item.current
   </Disclosure>
     <Disclosure as="nav" className="bg-black sticky top-0 z-50 nav-hidden">
 
-      <Disclosure.Button className="flex top-0 right-0 p-2 bg-gray-900 text-white rounded-md">
-        <svg className="h-6 w-6 text-white" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <Disclosure.Button className="flex top-0 left-0 bg-gray-900 text-white rounded-md">
+        <svg className="h-6 w-6 text-white left-0" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </Disclosure.Button>
-      <Disclosure.Panel className="text-gray-600 sm:hidden">
-        <ul className="pt-4">
+      <Disclosure.Panel className="text-gray-600 sm:hidden ">
+        <ul className="pt-4 ">
           {navigation.map((item) => (
             <li key={item.name} className="pb-1">
               <a
