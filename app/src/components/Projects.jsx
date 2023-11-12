@@ -1,7 +1,7 @@
 export default function Example() {
   return (
     <section id="projects">
-    <div className="bg-black pb-3 pt-20 sm:pt-0 lg:pt-0 md:pt-0 xl:pt-0">
+    <div className="bg-black pb-3 pt-10 sm:pt-0 lg:pt-0 md:pt-0 xl:pt-0">
       <div className="mx-auto max-w-2xl pb-0 px-4 sm:px-6 sm:py-5 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl font-bold tracking-tight text-white">
           {" "}
