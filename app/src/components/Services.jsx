@@ -8,7 +8,7 @@ export default function Services() {
           Our Services
         </h2>
         <Carousel slideInterval={1000} className="overflow-y-clip rounded py-5">
-          <div className="relative h-full w-full mix-blend-overlay py-2">
+          <div className="relative h-full w-full  py-2">
             <img
               src="./app-services.svg"
               alt="..."
@@ -21,7 +21,7 @@ export default function Services() {
               the whole process to give users a hassle-free experience.
             </span>
           </div>
-          <div className="relative h-full w-full mix-blend-overlay py-2">
+          <div className="relative h-full w-full  py-2">
             <img
               src="./website-services.svg"
               alt="..."
@@ -35,7 +35,7 @@ export default function Services() {
               out.
             </span>
           </div>
-          <div className="relative  h-full w-full mix-blend-overlay py-2">
+          <div className="relative  h-full w-full  py-2">
             <img
               src="./design-services.svg"
               alt="..."

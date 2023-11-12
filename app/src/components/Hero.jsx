@@ -1,4 +1,9 @@
 import { Carousel } from "flowbite-react";
+import code from "../assets/code.svg";
+import app from "../assets/app.svg";
+import design from "../assets/design.svg";
+import programming from "../assets/programming.svg";
+import contact from "../assets/contact.svg";
 
 export default function Example() {
   return (
@@ -11,37 +16,37 @@ export default function Example() {
             slideInterval={1000}
             className="overflow-y-clip rounded-none"
           >
-            <div className="relative mix-blend-overlay object-contain py-2 sm:h-0 sm:w-0 md:h-0 md:w-0 lg:h-full lg:w-full">
+            <div className="relative object-contain py-2 sm:h-0 sm:w-0 md:h-0 md:w-0 lg:h-full lg:w-full">
               <img
-                src="./code.svg"
+                src={code}
                 alt="Code BharatGoDev"
                 className="absolute h-full w-full object-contain "
               />
             </div>
-            <div className="relative h-full w-full mix-blend-overlay py-2">
+            <div className="relative h-full w-full py-2">
               <img
-                src="./app.svg"
+                src={app}
                 alt="App BharatGoDev"
                 className=" hidden lg:block lg:w-80 lg:h-80 lg:mt-0"
               />
             </div>
-            <div className="relative h-full w-full mix-blend-overlay py-2">
+            <div className="relative h-full w-full  py-2">
               <img
-                src="./design.svg"
+                src={design}
                 alt="Design BharatGoDev"
                 className=" hidden lg:block lg:w-80 lg:h-80 lg:mt-0"
               />
             </div>
-            <div className="relative h-full w-full mix-blend-overlay py-2">
+            <div className="relative h-full w-full  py-2">
               <img
-                src="./programming.svg"
+                src={programming}
                 alt="Programming BharatGoDev"
                 className=" hidden lg:block lg:w-80 lg:h-80 lg:mt-0"
               />
             </div>
-            <div className="relative h-full w-full mix-blend-overlay py-2">
+            <div className="relative h-full w-full  py-2">
               <img
-                src="./contact.svg"
+                src={contact}
                 alt="Hero BharatGoDev"
                 className=" hidden lg:block lg:w-80 lg:h-80 lg:mt-0"
               />
