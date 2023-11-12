@@ -68,7 +68,7 @@ export default function Services() {
     </span>
   </div>
 
-  <div className="relative  h-full w-full  py-2">
+  <div className="relative  h-1/2 w-full  py-2">
     <img
       src="./design1.svg"
       alt="..."
