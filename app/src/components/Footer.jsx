@@ -1,7 +1,7 @@
 export default function Example() {
   return (
     <footer className="text-white body-font">
-      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div className="container px-5 py-24 pb-2 pt-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white-900">
             <img className="h-8 w-auto" src="./logo.png" alt="BharatGoDev" />
@@ -12,9 +12,8 @@ export default function Example() {
               <span style={{ color: "#138808" }}>oDev</span>
             </div>
           </a>
-          <p className="mt-2 ml-6 text-sm text-white">Our Official Website</p>
         </div>
-        <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+        <div className="hidden flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-white-900 tracking-widest text-sm mb-3">
               Categories
@@ -58,15 +57,15 @@ export default function Example() {
       </div>
       <div className="bg-black-100">
         <div className="container mx-auto flex flex-wrap flex-col sm:flex-row">
-          <p className="text-white-500 text-sm text-center sm:text-left">
-            © 2023 BharatGoDev
+          {/* <p className="text-white-500 text-sm text-center sm:text-left">
+            © 2023
             <a
               href="https://twitter.com/bharatgodev"
               rel="noopener noreferrer"
               className="text-white-600 ml-1"
               target="_blank"
             ></a>
-          </p>
+          </p> */}
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a className="text-white-500">
               <svg
