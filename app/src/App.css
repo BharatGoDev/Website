@@ -41,13 +41,13 @@
   color: #888;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 891px) {
   .first-div {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 892px) {
   .carousel-hidden {
     display: none;
   }

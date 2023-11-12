@@ -9,7 +9,7 @@ export default function Services() {
         </h2>
         <Carousel slideInterval={3000} className="first-div">
         <div className="relative h-full w-full py-2" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-  <img src="./app-services.svg" alt="..." className="relative h-full  w-full object-contain" />
+  <img src="./app-services.svg" alt="..." className="relative h-1/2  w-full object-contain" />
   <br/>
   <span className="text-white">
     App Development <br /> We specialize in creating cool and
@@ -20,7 +20,7 @@ export default function Services() {
 </div>
 
 <div className=" relative h-full w-full py-2" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-  <img src="./website-services.svg" alt="..." className="relative h-full w-full object-contain " /><br/>
+  <img src="./website-services.svg" alt="..." className="relative h-1/2 w-full object-contain " /><br/>
   <span className="text-white">
   Web Development <br /> We are really good at making websites that
               look great and work well. We use the latest tech to make sure
@@ -34,7 +34,7 @@ export default function Services() {
             <img
               src="./design1.svg"
               alt="..."
-              className="relative h-full w-full object-contain "
+              className="relative h-1/2 w-full object-contain "
             /><br/>
             <span className="text-white">
               Graphic Design <br /> We love making things look awesome, like
@@ -68,7 +68,7 @@ export default function Services() {
     </span>
   </div>
 
-  <div className="relative  h-1/2 w-full  py-2">
+  <div className="relative  h-full w-full  py-2">
     <img
       src="./design1.svg"
       alt="..."
