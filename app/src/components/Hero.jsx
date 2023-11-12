@@ -8,7 +8,7 @@ import contact from "../assets/contact.svg";
 export default function Example() {
   return (
     <section id="about">
-      <div className="bg-black sm:pb-5 lg:px-10 lg:pt-20 lg:pr-40 lg:pb-20 lg:pl-40">
+      <div className="bg-black lg:px-10 lg:pt-20 lg:pr-40 pb-7 lg:pb-10 lg:pl-40">
         <div className="lg:flex lg:items-center">
           <Carousel
             leftControl=" "
@@ -52,13 +52,13 @@ export default function Example() {
               />
             </div>
           </Carousel>
-          <div className=" lg:text-right  text-center pt-2 lg:pl-20 lg:ml-20 ">
+          <div className="sm:pb-20 lg:text-right  text-center pt-2 lg:pl-20 lg:ml-20 ">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl  ">
               <span style={{ color: "#FF9933" }}>Bhar</span>
               <span style={{ color: "#FFFFFF" }}>atG</span>
               <span style={{ color: "#138808" }}>oDev</span>
             </h1>
-            <p className="text-center pt-2">
+            <p className="text-center pt-2 sm:pb-40 md:pb-10">
               <span style={{ color: "#FFFFFF" }}>
                 Website, App & Graphic Design Specialists
               </span>
