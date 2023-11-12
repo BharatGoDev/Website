@@ -55,9 +55,9 @@ export default function Services() {
             <span className="text-white">
               <p className="font-bold pt-2">Web Development</p> <br /> We are
               really good at making websites that look great and work well. We
-              use the latest tech to make sure everything runs smoothly. Plus,
-              we customize our solutions to fit exactly what you need, making
-              sure your online presence stands out.
+              use the latest tech to make sure everything runs smoothly. We
+              customize our solutions to fit exactly what you need, making sure
+              your online presence stands out.
             </span>
           </div>
 
@@ -81,15 +81,12 @@ export default function Services() {
               <br /> We love making things look awesome, like logos and promo
               stuff. Every little detail matters to us, creating a unique and
               memorable look for your brand. Our creative designs make sure your
-              brand gets noticed and remembered by everyone.
+              brand gets noticed and remembered.
             </span>
           </div>
         </Carousel>
 
-        <Carousel
-          slideInterval={3000}
-          className="carousel-hidden"
-        >
+        <Carousel slideInterval={3000} className="carousel-hidden">
           <div className="relative h-3/4 w-full pt-4">
             <img
               src="./app-services.svg"

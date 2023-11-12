@@ -15,7 +15,7 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="container mx-auto max-w-md px-4 pt-5">
+      <div className="container mx-auto max-w-md px-4 pt-10">
         <h2 className="text-2xl pb-2 font-bold tracking-tight text-white">
           {" "}
           Contact us
